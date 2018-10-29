@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eastern ajaxer</title>
+</head>
+<body style="font-family: 'Helvetica'; font-size: 18px; padding: 10px">
+note: please install <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en-US">this chrome extension!</a> also, open your console for more info.</br></br>
+job #: <input id="job_no" type="number"></input></br>
+change status code: 
+<select id="job_status">
+    <option value="0">0 - Driver unassigned</option>
+    <option value="1">1 - Driver en-route</option>
+    <option value="2">2 - Driver Arrived/Near Pickup</option>
+    <option value="3">3 - Picked Up</option>
+    <option value="4">4 - Dropped Off</option>
+    <option value="5">5 - No-Show Reported by Driver</option>
+    <option value="6">6 - Customer Canceled with Driver</option>
+    <option value="7">7 - Driver Change</option>
+    <option value="8">8 - Dropoff Unknown</option>
+    <option value="9">9 - No-Show Reported by Dispatcher</option>
+  <option value="10">10 - Driver Removed by Dispatcher</option>
+  <option value="11">11 - New Driver Sent By Dispatcher</option>
+  <option value="12">12 - Canceled by Dispatcher</option>
+  <option value="13">13 - Canceled by Customer</option>
+  <option value="14">14 - Canceled by Affiliate</option>
+</select></br>
+<button id="submit">do it</button></br></br>
+recent jobs:
+<div id="recents" style="display: block"></div>
+
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

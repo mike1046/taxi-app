@@ -1,0 +1,61 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true
+  },
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "globals": {
+    "Headers" : 1,
+    "Request" : 1,
+    "fetch" : 1,
+    "XMLHttpRequest": 1,
+    "navigator": true,
+  },
+  "rules": {
+    "camelcase": 0,
+    "radix": [1, "as-needed"],
+    "no-use-before-define": 0,
+    "consistent-return": [0, { "treatUndefinedAsUnspecified": true }],
+    "semi": ["warn", "never"],
+    "global-require": 0,
+    "eqeqeq": 0,
+    "react/jsx-closing-bracket-location": [1, 'after-props'],
+    "strict": 1,
+    "no-var": 1,
+    "no-mixed-spaces-and-tabs": 1,
+    "indent": 1,
+    "max-len": 1,
+    "one-var": 1,
+    "react/jsx-indent": 1,
+    "react/jsx-first-prop-new-line": 1,
+    "react/prop-types": 1,
+    "react/jsx-filename-extension": "off",
+    "react/prefer-stateless-function": 1,
+    "comma-dangle": 1,
+    "no-unused-vars": 1,
+    "react/prefer-es6-class": 1,
+    "quote-props": 1,
+    "import/prefer-default-export": "off",
+    "no-prototype-builtins": "off",
+    "react/no-unused-prop-types": ["warn", {"skipShapeProps": true }],
+    "react/forbid-prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "no-restricted-syntax": "off",
+    "wrap-iife": ["warn", "inside"],
+    "no-constant-condition": "off",
+  },
+  "extends": [
+    "airbnb"
+  ]
+}
